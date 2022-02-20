@@ -1,0 +1,566 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-image: linear-gradient(white, #f6f6f6);
+}
+#top-h1{
+    display: block;
+    text-align: center;
+    background: linear-gradient(rgb(180, 180, 180),white);
+    width: 100vw;
+    font-family: 'Gideon Roman', cursive;
+    font-weight: normal;
+    font-size: 40px;
+}
+
+/* leftbar style */
+.leftbar{
+    width: 13%;
+    height: 100%;
+    float: left;
+    background: linear-gradient(white,#f6f6f6, #f6f6f6);
+    padding-left: 0.7em;
+    font-size: 13px;
+}
+.leftbar img{
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.leftbar .ul1{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.leftbar .ul1 a{
+    list-style-type: none;
+    text-decoration: none;
+    line-height: 1.5;
+}
+.leftbar .ul1 a:hover{
+    text-decoration: underline;
+}
+.leftbar .ul1 a li{
+    color: #0645ad;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.leftbar .ul2{
+    margin-top: 10px;
+}
+.con{
+    margin-left: 18px;
+}
+.hr1{
+    width: 75%;
+    margin: auto;
+}
+.morelang{
+    background-image: url('https://en.wikipedia.org/w/extensions/UniversalLanguageSelector/resources/images/language-base20.svg?b7954');
+    background-repeat: no-repeat;
+    background-position: left 5px center;
+    background-size: 16px;
+    border: 1px solid #a2a9b1;
+    margin: 10px 0 8px 0;
+    padding: 4px 8px 4px 26px;
+    cursor: pointer;
+}
+.morelang:hover{
+    background-color: white;
+}
+.edlink{
+    background-image: url('https://en.wikipedia.org/w/extensions/Wikibase/client/resources/images/edit.svg?34bc5');
+    background-repeat: no-repeat;
+    background-position: left 70px center;
+    background-size: 11px;
+    padding: 2px 7px 2px 83px;
+    font-size: 12px;
+    color: #54595d;
+}
+
+/* button */
+.checkbtn{
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    margin-left: 10px;
+    position: absolute;
+    top: 10px;
+    display: none;
+}
+#check{
+    display: none;
+}
+/* Main style  */
+
+/* head1 */
+.head1{
+    font-size: 12px;
+}
+.head1 nav ul{
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: end;
+    align-items: baseline;
+}
+.head1 nav ul a li{
+    float: left;
+    padding: 5px;
+    color: #0645ad;
+}
+.col{
+    color:#54595d !important;
+    cursor: text;
+}
+#log{
+    background-image: url('https://en.wikipedia.org/w/skins/Vector/resources/skins.vector.styles.legacy/images/user-avatar.svg?b7f58');
+    background-repeat: no-repeat;
+    background-position: left 0px center;
+    background-size: 13px;
+    padding-top: 3px;
+    padding-left: 12px;
+}
+
+/* head2 */
+.head2{
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+.head2 nav ul a li{
+    display: block;
+    float: left;   
+    padding: 10px 10px 10px 10px;
+    margin-top: 20px;
+}
+.head2 nav ul{
+    list-style-type: none;
+    text-decoration: none;
+}
+.Readpad{
+    display: flex;
+    flex-direction: row-reverse;
+    padding-left: 42%;
+    float: left;
+    border-bottom: 1px solid #a7d7f9;
+    margin-left: 0px;
+    padding-right: 0px;
+    background-color: #edf5fa;
+    background-image: linear-gradient(white,#f9f9f9);
+    height: 48%;
+}
+.talkbod{
+    border-bottom: 1px solid #a7d7f9;
+    border-left: 1px solid #a7d7f9;
+    border-right: 1px solid #a7d7f9;
+    margin-left: 10px;
+    padding-right: 10px;
+    background-color: #edf5fa;
+    background-image: linear-gradient(white,#eef5fa);
+    height: 48%;
+}
+.readbod{
+    border-left: 1px solid #a7d7f9;
+    border-right: 1px solid #a7d7f9;
+    margin-left: 10px;
+    padding-right: 10px;
+    background-color: #edf5fa;
+    background-image: linear-gradient(white,#eef5fa);
+}
+.viewbod{
+    border-bottom: 1px solid #a7d7f9;
+    border-right: 1px solid #a7d7f9;
+    padding-right: 10px;
+    background-color: #edf5fa;
+    background-image: linear-gradient(white,#eef5fa);
+}
+.soubod{
+    border-bottom: 1px solid #a7d7f9;
+    border-right: 1px solid #a7d7f9;
+    padding-right: 10px;
+    background-color: #edf5fa;
+    background-image: linear-gradient(white,#eef5fa);
+}
+#search{
+    margin: 27px 1px 1px 8px;
+    position: relative;
+    bottom: 12px;
+    padding: 5px 55px 5px 5px;
+    width: 16%;
+
+}
+.searchbod{
+    display: inline;
+    border-bottom: 1px solid #a7d7f9;
+    position: relative;
+    top: -4px;
+}
+
+
+/* Main content */
+.main{
+    padding: 20px;
+    float: left;
+    width: 87%;
+    height: 100%;
+    border-left: 1px solid #a7d7f9;
+    border-bottom: 1px solid #a7d7f9;
+    background-color: white;
+    margin-bottom: 21px;
+}
+.main h1{
+    font-family: 'Gideon Roman', cursive;
+    font-weight: normal;
+    float: left;
+}
+hr{
+    width: 100%;
+}
+.plus-lock{
+    display: flex;
+    justify-content: end;
+}
+.note{
+    font-size: 13px;
+    padding-top: 10px;
+}
+.content{
+    width: 73%;
+    display: grid;
+    float: left;
+}
+.content p{
+    width: 100%;
+    padding-top: 15px;
+    font-size: 14px;
+    line-height: 1.4;
+    word-wrap: break-word;
+}
+.content a{
+    text-decoration: none;
+    color: #0645ad;
+}
+.content a:hover{
+    text-decoration: underline;
+}
+#apj-bio{
+    width: 26%;
+    height: 100%;
+    display: flex;
+    border: 1px solid #ccc;
+    background-color: #f6f6f6;
+    flex-flow: column;
+    margin-left: auto;
+    padding-bottom: 20px;
+    float: right;
+}
+#apj-bio h3{
+    margin: 10px auto 1px auto;
+}
+#apj-img{    
+    width: 75%;
+    margin: 10px auto 0px auto;
+}
+#apj-img img{
+    width: 100%;
+}
+#apj-bio p{
+    width: 51%;
+    margin: -3px auto 0px auto;
+    font-size: 12px;
+    text-align: center;
+    line-height: 1.5;
+}
+#apj-bio .bio-con h5{
+    margin: 10px 5px 10px 5px;
+    background-color: #e6e6fa;
+    display: block;
+    text-align: center;
+    padding: 3px 0 3px 0;
+}
+.tab tr th{
+    font-size: 13px;
+    padding-right: 10px;
+    text-align: left;
+}
+.tab tr td{
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    align-items: flex-start;
+    justify-content: left;
+    position: relative;
+    top: 9px;
+    margin-bottom: 3px;
+}
+.pos{
+    padding-top: 8px;
+}
+.tab tr td a{
+    text-decoration: none;
+    color: #0645ad;
+}
+.tab tr td a:hover{
+    text-decoration: underline;
+}
+.tab tr th a{
+    text-decoration: none;
+    color: #0645ad;
+}
+.tab tr th a:hover{
+    text-decoration: underline;
+}
+.pos-1{
+    vertical-align: top;
+    padding-top: 9px;
+}
+#apj-bio .tab{
+    margin-left: 5px;
+}
+
+/* biography */
+
+.box-content{
+    width: 28%;
+    height: 100%;
+    margin-top: 425px;
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+    border: 1px solid #a2a9b1;
+    background-color: #f6f6f6;
+    line-height: 1.7;
+    font-size: 13px;
+}
+.box-content h3{
+    padding-top: 10px;
+    text-align: center;
+    margin-bottom: 4px;
+}
+.box-content ol li{
+    margin: 0;
+}
+.box-content ol li a{
+    text-decoration: none;
+    color: #0645ad;
+}
+.box-content ol li a:hover{
+    text-decoration: underline;
+}
+
+/* Early life and education */
+.early{
+    display: inline-block;
+    width: 74%;
+}
+.early h3{
+    font-weight: bold;
+    font-family: 'Gideon Roman', cursive;
+}
+.early hr{
+    width: 99%;
+}
+.early p{
+    padding-top: 15px;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-right: 9px;
+    margin-bottom: 10px;
+}
+
+/* Career */
+.career h3{
+    font-weight: bold;
+    font-family: 'Gideon Roman', cursive;
+}
+.career hr{
+    width: 100%;
+}
+.career p{
+    padding-top: 15px;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-right: 9px;
+    margin-bottom: 10px;
+}
+
+/* Personal life */
+
+.personal h3{
+    font-weight: bold;
+    font-family: 'Gideon Roman', cursive;
+}
+.personal hr{
+    width: 100%;
+}
+.personal p{
+    width: 77%;
+    padding-top: 15px;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-right: 9px;
+    margin-bottom: 10px;
+    float: left;
+}
+.personal img{
+    float: right;
+    margin-top: 10px;
+}
+
+/* meadi query */
+
+/* Laptop view */
+
+@media screen and (max-width: 1250px){
+    .edlink{
+        padding-left: 50px;
+        background-position: left 37px center;
+    }
+    .personal p{
+        width: 100%;
+    }
+    .personal img{
+        width: 25%;
+        margin: 10px auto 0px auto;
+        display: block;
+        float: none;
+    }
+}
+@media screen and (max-width: 900px){
+    #apj-bio{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    .content{
+        width: 100%;
+    }
+    .early{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .early p{
+        display: inline-block;
+        width: 100%;
+    }
+    .early hr{
+        width: 100%;
+    }
+    .box-content{
+        margin-top: 750px;
+        width: 45%;
+    }
+    .edlink{
+        padding-left: 30px;
+        background-position: left 12px center;
+    }
+    .head1 nav ul{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .leftbar .ul1{
+        margin-left: 5px;
+    }
+
+}
+@media screen and (max-width: 1210px) and (min-width: 900px) {
+    #search{
+        width: 10%;
+        padding: 5px 3px 5px 5px;
+    }
+}
+@media screen and (max-width: 1005px){
+    #search{
+        display: none;
+    }
+}
+/* mobile view*/
+@media screen and (max-width: 425px) {
+    .head2{
+        display: none;
+    }
+    .head1{
+        position: relative;
+        right: 20px;
+    }
+    .box-content{
+        display: none;
+    }
+    #apj-bio{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .leftbar img{
+        width: 40%;
+    }
+    .personal img{
+        width: 60% !important;
+    }
+}
+
+/* tablet view */
+@media screen and (max-width: 768px) {
+    .main{
+        width: 100% !important;
+    }
+    .head2{
+        display: none;
+    }
+    .personal img{
+        width: 35%;
+    }
+}
+
+/* Slidebar */
+@media (max-width: 768px) {
+    
+    .checkbtn{
+        padding: 7px;
+        display: flex;
+        margin-left: 10px;
+        position: absolute;
+        top: 2px;
+        border: 2px solid black;
+    }
+    .leftbar{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: #d1dae2;
+        /* top: 80px; */
+        text-align: center;
+        right: 100%;
+        transition: all .5s;
+        overflow-y: scroll;
+    }
+    .leftbar img{
+        width: 25%;
+    }
+    .leftbar li{
+        display: block;
+    }
+    .leftbar li a{
+        font-size: 20px;
+    }
+    .leftbar .ul1 a li{
+        justify-content: center;
+        font-size: 15px;
+    }
+    a:hover, a.active{
+        background-color: none;
+        color: #0082e6;
+    }
+    #check:checked ~ .leftbar{
+        left: 0;
+        z-index: 1;
+    }
+}
