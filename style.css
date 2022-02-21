@@ -93,6 +93,7 @@ body{
     position: absolute;
     top: 10px;
     display: none;
+    z-index: 2;
 }
 #check{
     display: none;
@@ -331,13 +332,14 @@ hr{
 .box-content{
     width: 28%;
     height: 100%;
-    margin-top: 425px;
-    margin-bottom: 40px;
+    margin-bottom: 14px;
     padding-bottom: 10px;
     border: 1px solid #a2a9b1;
     background-color: #f6f6f6;
     line-height: 1.7;
     font-size: 13px;
+    display: flex;
+    flex-direction: column;
 }
 .box-content h3{
     padding-top: 10px;
@@ -381,7 +383,7 @@ hr{
     font-family: 'Gideon Roman', cursive;
 }
 .career hr{
-    width: 100%;
+    width: 72%;
 }
 .career p{
     padding-top: 15px;
@@ -505,6 +507,9 @@ hr{
     .personal img{
         width: 60% !important;
     }
+    .plus-lock{
+        display: none;
+    }
 }
 
 /* tablet view */
@@ -528,7 +533,8 @@ hr{
         display: flex;
         margin-left: 10px;
         position: absolute;
-        top: 2px;
+        top: 7px;
+        left: 4px;
         border: 2px solid black;
     }
     .leftbar{
@@ -536,7 +542,7 @@ hr{
         width: 100%;
         height: 100%;
         background: #d1dae2;
-        /* top: 80px; */
+        top: 0px;
         text-align: center;
         right: 100%;
         transition: all .5s;
